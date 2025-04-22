@@ -1,18 +1,46 @@
 \documentclass{cernrep}
+\usepackage{doi}
+\usepackage[
+backend=biber,
+style=numeric,
+sorting=none
+]{biblatex}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true,
+    urlcolor = cyan,
+    citecolor = black,
+}
+
+\addbibresource{bibliography.bib}
+
 \begin{document}
+
+
 \title{Simulation and performance studies of a straw tube tracker detector concept for the FCC-ee}
 \author{M. Arias, Y. Li, K. Nelson, J. Qian}
 \institute{University of Michigan}
 
 
 \begin{abstract}
-Todo
+The planed Future Circular Collider will operate first as a lepton collider in an $e^+e^-$ mode, the FCC-ee.
+In contrast to the Large Hadron Collider, the current energy-frontier machine, the FCC-ee will have precise control on the center-of-mass energy to below the 0.2\% level.
+Therefore, a high-precision inner tracking detector with transverse momentum resolution on the order of 0.2\% is required to fully take advantage of the clean collider environment.
+Existing detector concepts to meet these needs include the IDEA drift chamber and the CLD silicon tracker.
+However, we study a third option: a thin-wall straw tube tracker.
+Such a tracker could offer lower material budget than a full silicon detector and improved particle identification compared to a drift chamber.
+In this note we briefly present an overview of the detector concept and its possible advantages and flexibility before presenting a detailed accounting of simulation studies and geometric optimization of the detector layout.
 \end{abstract}
 
-\keywords{FCC-ee; straw tracker}
+\keywords{FCC-ee; straw tracker; detector simulation}
 
 \maketitle
 
+\section{Introduction}
+\input{chapters/intro}
 
+
+
+\printbibliography
 
 \end{document}
